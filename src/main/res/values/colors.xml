@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="btnPadrao">#676666</color>
+    <color name="colorDuplaSena">#8d1b1b</color>
+    <color name="colorLotofacil">#862c6c</color>
+    <color name="colorLotomania">#e5733e</color>
+    <color name="colorMegaSena">#1e572e</color>
+    <color name="colorQuina">#36195b</color>
+    <color name="txtColorPadrao">#ffffff</color>
+    <color name="bkgdPadrao">#FDFDE1</color>
+    <color name="bkgdDuplaSena">#FFF6F6</color>
+    <color name="bkgdLotofacil">#FBF4F9</color>
+    <color name="bkgdLotomania">#FFE9DF</color>
+    <color name="bkgdMegaSena">#E6FFED</color>
+    <color name="bkgdQuina">#FAF6FF</color>
+    <color name="txtBolas">#000000</color>
+</resources>

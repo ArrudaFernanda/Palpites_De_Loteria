@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Palpites De Loteria</string>
+    <string name="strDuplaSena">DUPLA SENA</string>
+    <string name="strLotofacil">LOTOFÁCIL</string>
+    <string name="strLotomania">LOTOMANIA</string>
+    <string name="strMegaSena">MEGA-SENA</string>
+    <string name="strQuina">QUINA</string>
+    <string name="strBtnGerar">Gerar Palpite</string>
+    <string name="strBtnCopy">Copiar</string>
+    <string name="strON">ON</string>
+    <string name="strOFF">OFF</string>
+</resources>

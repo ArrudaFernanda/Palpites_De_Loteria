@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/bkgdLotomania"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.Lotomania">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="60dp"
+              android:id="@+id/txtLotomania"
+              android:text="@string/strLotomania"
+              android:textStyle="italic"
+              android:textSize="40sp"
+              android:textColor="@color/txtColorPadrao"
+              android:textAlignment="center"
+              android:gravity="center"
+              android:background="@color/colorLotomania"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_marginTop="4dp"
+              android:layout_marginLeft="118dp"
+              android:fontFamily="sans-serif-black"/>
+
+    <ImageView android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:id="@+id/trevolotomania"
+               android:background="@drawable/trevolotomania"
+               app:layout_constraintEnd_toStartOf="@+id/txtLotomania"
+               app:layout_constraintTop_toTopOf="parent"
+               android:layout_marginTop="4dp"
+               android:layout_marginEnd="0dp"
+               android:layout_marginRight="0dp"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_a"
+            android:id="@+id/view1_lm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="@dimen/marginTop_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_a"
+            android:id="@+id/view2_lm"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/marginTop_lm"
+            app:layout_constraintStart_toEndOf="@+id/view1_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_a"
+            android:id="@+id/view3_lm"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/marginTop_lm"
+            app:layout_constraintStart_toEndOf="@+id/view2_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_a"
+            android:id="@+id/view4_lm"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/marginTop_lm"
+            app:layout_constraintStart_toEndOf="@+id/view3_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_a"
+            android:id="@+id/view5_lm"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/marginTop_lm"
+            app:layout_constraintStart_toEndOf="@+id/view4_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_b"
+            android:id="@+id/view6_lm"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/marginTop_lm"
+            app:layout_constraintStart_toEndOf="@+id/view5_lm"/>
+
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_b"
+            android:id="@+id/view7_lm"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/marginTop_lm"
+            app:layout_constraintStart_toEndOf="@+id/view6_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_b"
+            android:id="@+id/view8_lm"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/marginTop_lm"
+            app:layout_constraintStart_toEndOf="@+id/view7_lm"/>
+
+    <!-- //////////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_b"
+            android:id="@+id/view9_lm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1_lm"
+            android:layout_marginLeft="6dp"
+    />
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_b"
+            android:id="@+id/view10_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view2_lm"
+            app:layout_constraintStart_toEndOf="@+id/view9_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_c"
+            android:id="@+id/view11_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view3_lm"
+            app:layout_constraintStart_toEndOf="@+id/view10_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_c"
+            android:id="@+id/view12_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view4_lm"
+            app:layout_constraintStart_toEndOf="@+id/view11_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_c"
+            android:id="@+id/view13_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view5_lm"
+            app:layout_constraintStart_toEndOf="@+id/view12_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_c"
+            android:id="@+id/view14_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view6_lm"
+            app:layout_constraintStart_toEndOf="@+id/view13_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_c"
+            android:id="@+id/view15_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view7_lm"
+            app:layout_constraintStart_toEndOf="@+id/view14_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_d"
+            android:id="@+id/view16_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view8_lm"
+            app:layout_constraintStart_toEndOf="@+id/view15_lm"/>
+
+    <!-- //////////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_d"
+            android:id="@+id/view17_lm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view9_lm"
+            android:layout_marginLeft="6dp"
+    />
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_d"
+            android:id="@+id/view18_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view10_lm"
+            app:layout_constraintStart_toEndOf="@+id/view17_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_d"
+            android:id="@+id/view19_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view11_lm"
+            app:layout_constraintStart_toEndOf="@+id/view18_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_d"
+            android:id="@+id/view20_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view12_lm"
+            app:layout_constraintStart_toEndOf="@+id/view19_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_e"
+            android:id="@+id/view21_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view13_lm"
+            app:layout_constraintStart_toEndOf="@+id/view20_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_e"
+            android:id="@+id/view22_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view14_lm"
+            app:layout_constraintStart_toEndOf="@+id/view21_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_e"
+            android:id="@+id/view23_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view15_lm"
+            app:layout_constraintStart_toEndOf="@+id/view22_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_e"
+            android:id="@+id/view24_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view16_lm"
+            app:layout_constraintStart_toEndOf="@+id/view23_lm"/>
+
+    <!-- //////////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_e"
+            android:id="@+id/view25_lm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view17_lm"
+            android:layout_marginLeft="6dp"
+    />
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_j"
+            android:id="@+id/view26_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view18_lm"
+            app:layout_constraintStart_toEndOf="@+id/view25_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_j"
+            android:id="@+id/view27_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view19_lm"
+            app:layout_constraintStart_toEndOf="@+id/view26_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_j"
+            android:id="@+id/view28_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view20_lm"
+            app:layout_constraintStart_toEndOf="@+id/view27_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_j"
+            android:id="@+id/view29_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view21_lm"
+            app:layout_constraintStart_toEndOf="@+id/view28_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_j"
+            android:id="@+id/view30_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view22_lm"
+            app:layout_constraintStart_toEndOf="@+id/view29_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_f"
+            android:id="@+id/view31_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view23_lm"
+            app:layout_constraintStart_toEndOf="@+id/view30_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_f"
+            android:id="@+id/view32_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view24_lm"
+            app:layout_constraintStart_toEndOf="@+id/view31_lm"/>
+
+    <!-- //////////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_f"
+            android:id="@+id/view33_lm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view25_lm"
+            android:layout_marginLeft="6dp"
+    />
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_f"
+            android:id="@+id/view34_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view26_lm"
+            app:layout_constraintStart_toEndOf="@+id/view33_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_f"
+            android:id="@+id/view35_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view27_lm"
+            app:layout_constraintStart_toEndOf="@+id/view34_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_g"
+            android:id="@+id/view36_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view28_lm"
+            app:layout_constraintStart_toEndOf="@+id/view35_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_g"
+            android:id="@+id/view37_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view29_lm"
+            app:layout_constraintStart_toEndOf="@+id/view36_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_g"
+            android:id="@+id/view38_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view30_lm"
+            app:layout_constraintStart_toEndOf="@+id/view37_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_g"
+            android:id="@+id/view39_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view31_lm"
+            app:layout_constraintStart_toEndOf="@+id/view38_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_g"
+            android:id="@+id/view40_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view32_lm"
+            app:layout_constraintStart_toEndOf="@+id/view39_lm"/>
+
+    <!-- //////////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_h"
+            android:id="@+id/view41_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view34_lm"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_h"
+            android:id="@+id/view42_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view35_lm"
+            app:layout_constraintStart_toEndOf="@+id/view41_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_h"
+            android:id="@+id/view43_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view36_lm"
+            app:layout_constraintStart_toEndOf="@+id/view42_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_h"
+            android:id="@+id/view44_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view37_lm"
+            app:layout_constraintStart_toEndOf="@+id/view43_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_h"
+            android:id="@+id/view45_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view38_lm"
+            app:layout_constraintStart_toEndOf="@+id/view44_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_i"
+            android:id="@+id/view46_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view39_lm"
+            app:layout_constraintStart_toEndOf="@+id/view45_lm"/>
+
+    <!-- //////////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_i"
+            android:id="@+id/view47_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view42_lm"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="106dp"
+            android:layout_marginStart="106dp"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_i"
+            android:id="@+id/view48_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view43_lm"
+            app:layout_constraintStart_toEndOf="@+id/view47_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_i"
+            android:id="@+id/view49_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view44_lm"
+            app:layout_constraintStart_toEndOf="@+id/view48_lm"/>
+
+    <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/txtSizBolLotom"
+            android:gravity="center"
+            android:layout_width="@dimen/imgBola_hw_loMan"
+            android:layout_height="@dimen/imgBola_hw_loMan"
+            android:background="@drawable/bola_i"
+            android:id="@+id/view50_lm"
+            app:layout_constraintTop_toBottomOf="@+id/view45_lm"
+            app:layout_constraintStart_toEndOf="@+id/view49_lm"/>
+
+    <Button android:layout_width="@dimen/btnGerar_w"
+            android:layout_height="wrap_content"
+            android:text="@string/strBtnGerar"
+            android:textColor="@color/txtColorPadrao"
+            android:background="@drawable/btncorner"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btnLMGerar"
+            app:layout_constraintTop_toBottomOf="@+id/view49_lm"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="144dp"/>
+    <Button
+            android:text="@string/strBtnCopy"
+            android:textColor="@color/txtColorPadrao"
+            android:background="@drawable/btncorner"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCopLotom"
+            app:layout_constraintTop_toBottomOf="@+id/view50_lm"
+            app:layout_constraintStart_toEndOf="@+id/btnLMGerar"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
