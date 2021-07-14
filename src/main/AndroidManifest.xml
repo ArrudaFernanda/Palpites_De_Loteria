@@ -21,18 +21,20 @@
         <activity android:name=".views.Lotofacil"
                   android:theme="@style/LotofacilTheme">
         </activity>
-        <activity android:name=".intro.IntroActivity">
+        <activity android:name=".intro.IntroActivity"
+                  android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity
                 android:name=".views.DuplaSena"
                 android:theme="@style/DuplaSenaTheme">
         </activity>
         <activity android:name=".views.MainMenu">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
     </application>
 

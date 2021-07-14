@@ -1,7 +1,6 @@
 package com.a7apps.palpitesdeloteria.control;
 
 import android.content.Context;
-
 import java.util.ArrayList;
 
 public class RemoveAdd {

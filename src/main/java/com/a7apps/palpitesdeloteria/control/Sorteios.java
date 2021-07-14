@@ -28,12 +28,12 @@ public class Sorteios {
     }
 
     public void sorteioDuplaSena(TextView[] txtViewList, TextView[] txtViewList2, SwitchCompat aswitch, TextView txt1, TextView txt2){
-        ArrayList<String> cartelaArray50 = new ArrayList<>();
+        ArrayList<String> cartelaDuplaSena = new ArrayList<>();
         ArrayList<String> mais7Array = new ArrayList<>();
 
-        preencheCartelas(50, cartelaArray50, mais7Array, dados.getMais7DuplaSena());
+        preencheCartelas(50, cartelaDuplaSena, mais7Array, dados.getMais7DuplaSena());
 
-        Collections.shuffle(cartelaArray50);
+        Collections.shuffle(cartelaDuplaSena);
         Collections.shuffle(mais7Array);
 
         if (aswitch.isChecked()){
@@ -44,33 +44,33 @@ public class Sorteios {
             txt2.setText(mais7Array.get(1));
             //////////////////////aqui estou //////////
             RemoveAdd removeAdd = new RemoveAdd(context);
-            removeAdd.remover(cartelaArray50, "04", "14", "19", "33", "39",
+            removeAdd.remover(cartelaDuplaSena, "04", "14", "19", "33", "39",
                     "45", "47");
 
             for (int i = 0; i < 4; i++) {
-                txtViewList2[i].setText(cartelaArray50.get(i));
+                txtViewList2[i].setText(cartelaDuplaSena.get(i));
             }
 
-            removeAdd.adicionar(cartelaArray50,"04", "14", "19", "33", "39",
+            removeAdd.adicionar(cartelaDuplaSena,"04", "14", "19", "33", "39",
                     "45", "47");
 
         }else {
             txt1.setBackgroundResource(R.drawable.bola_a);
             txt2.setBackgroundResource(R.drawable.bola_b);
             for (int i = 0; i < 6; i++){
-                txtViewList[i].setText(cartelaArray50.get(i));
+                txtViewList[i].setText(cartelaDuplaSena.get(i));
             }
         }
     }
 
     public void sorteioLotofacil(TextView[] txtViewList, TextView[] txtViewList2, SwitchCompat aswitch,
                                  TextView txt1, TextView txt2, TextView txt3, TextView txt4){
-        ArrayList<String> cartelaArray25 = new ArrayList<>();
+        ArrayList<String> cartelaLotofacil = new ArrayList<>();
         ArrayList<String> mais7Array = new ArrayList<>();
 
-        preencheCartelas(25, cartelaArray25, mais7Array, dados.getMais7Lotofacil());
+        preencheCartelas(25, cartelaLotofacil, mais7Array, dados.getMais7Lotofacil());
 
-        Collections.shuffle(cartelaArray25);
+        Collections.shuffle(cartelaLotofacil);
         Collections.shuffle(mais7Array);
 
         if (aswitch.isChecked()){
@@ -84,13 +84,13 @@ public class Sorteios {
             txt4.setText(mais7Array.get(3));
 
             RemoveAdd removeAdd = new RemoveAdd(context);
-            removeAdd.remover(cartelaArray25, "10", "11", "13", "14", "20", "24", "25");
+            removeAdd.remover(cartelaLotofacil, "10", "11", "13", "14", "20", "24", "25");
 
             for (int i = 0; i < 11; i++){
-                txtViewList2[i].setText(cartelaArray25.get(i));
+                txtViewList2[i].setText(cartelaLotofacil.get(i));
             }
 
-            removeAdd.adicionar(cartelaArray25,"10", "11", "13", "14", "20", "24", "25");
+            removeAdd.adicionar(cartelaLotofacil,"10", "11", "13", "14", "20", "24", "25");
 
         }else {
             txt1.setBackgroundResource(R.drawable.bola_a);
@@ -98,7 +98,7 @@ public class Sorteios {
             txt3.setBackgroundResource(R.drawable.bola_c);
             txt4.setBackgroundResource(R.drawable.bola_d);
             for (int i = 0; i < 15; i++){
-                txtViewList[i].setText(cartelaArray25.get(i));
+                txtViewList[i].setText(cartelaLotofacil.get(i));
             }
         }
     }

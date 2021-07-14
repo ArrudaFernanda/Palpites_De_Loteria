@@ -9,4 +9,10 @@
     <string name="strBtnCopy">Copiar</string>
     <string name="strON">ON</string>
     <string name="strOFF">OFF</string>
+    <string name="tIntro1">Um pouco mais que sorte!</string>
+    <string name="dIntro1">No *momento, essas são as sete dezenas mais sorteadas na Mega-Sena ao longo da história.</string>
+    <string name="tIntro2">A estatística a seu favor:</string>
+    <string name="dIntro2">A função estatística irá garantir que seu jogo tenha sempre alguma(s) dessas dezenas campeãs.</string>
+    <string name="dIntro3">Para isso basta, ativar este botão antes de gerar o palpite.</string>
+    <string name="tIntro4">Seja bem vindo(a) e Boa Sorte!</string>
 </resources>
