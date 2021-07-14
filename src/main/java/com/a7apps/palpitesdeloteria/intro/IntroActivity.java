@@ -13,9 +13,9 @@ import com.github.appintro.AppIntroFragment;
 import org.jetbrains.annotations.Nullable;
 
 public class IntroActivity extends AppIntro {
-    SharedPreferences sharedPreferences;
-    SharedPreferences.Editor editor;
-
+    private SharedPreferences sharedPreferences;
+    private SharedPreferences.Editor editor;
+    private final String strKey = "checkState";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +36,7 @@ public class IntroActivity extends AppIntro {
         editor = sharedPreferences.edit();
 
         if (sharedPreferences != null){
-            boolean checkShared = sharedPreferences.getBoolean("checkStated", false);
+            boolean checkShared = sharedPreferences.getBoolean(strKey, false);
 
             if (checkShared){
                 startActivity(new Intent(getApplicationContext(), MainMenu.class));
@@ -50,7 +50,7 @@ public class IntroActivity extends AppIntro {
         super.onSkipPressed(currentFragment);
 
         startActivity(new Intent(getApplicationContext(), MainMenu.class));
-        editor.putBoolean("checkStated", false).commit();
+        editor.putBoolean(strKey, false).commit();
         finish();
     }
 
@@ -59,7 +59,7 @@ public class IntroActivity extends AppIntro {
         super.onDonePressed(currentFragment);
 
         startActivity(new Intent(getApplicationContext(), MainMenu.class));
-        editor.putBoolean("checkStated", true).commit();
+        editor.putBoolean(strKey, true).commit();
         finish();
     }
 }

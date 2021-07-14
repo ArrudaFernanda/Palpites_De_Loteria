@@ -90,15 +90,4 @@
             android:layout_marginStart="112dp"
     />
 
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/bannerpropaganda03"
-            android:id="@+id/imageView3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.454"
-            android:layout_marginBottom="16dp"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
