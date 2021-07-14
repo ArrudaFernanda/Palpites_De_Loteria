@@ -12,4 +12,8 @@
     <dimen name="txtSwitch">16sp</dimen>
     <dimen name="txtSizeBolas">36sp</dimen>
     <dimen name="txtSizBolLotom">20sp</dimen>
+
+    <!-- ////////////////////////// -->
+
+    <dimen name="mTopLm">18dp</dimen>
 </resources>
