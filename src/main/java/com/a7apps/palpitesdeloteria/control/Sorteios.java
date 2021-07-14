@@ -18,31 +18,37 @@ public class Sorteios {
         dados = new Dados(context);
     }
 
-    public void preencheCartelas(int nBolasTotal, ArrayList<String> cartelaArray, ArrayList<String> mais7Array, String[] seteMais){
-        for (int i = 0; i < nBolasTotal; i++){
-            cartelaArray.add(dados.getNumbersList()[i]);
+    public void preencheCartelas(int totNum, ArrayList<String> cartelaJogo, ArrayList<String> mais7Array, String[] mais7Item){
+        for (int i = 0; i < totNum; i++){
+            cartelaJogo.add(dados.getNumbersList()[i]);
             if (i < 7){
-                mais7Array.add(seteMais[i]);
+                mais7Array.add(mais7Item[i]);
             }
         }
     }
 
     public void sorteioDuplaSena(TextView[] txtViewList, TextView[] txtViewList2, SwitchCompat aswitch, TextView txt1, TextView txt2){
-        ArrayList<String> cartelaDuplaSena = new ArrayList<>();
-        ArrayList<String> mais7Array = new ArrayList<>();
+        ArrayList<String> cartelaDuplaSena = new ArrayList<>();//Contém todos os números presentes no volante da Dupla Sena
+        ArrayList<String> mais7Array = new ArrayList<>();// Contém as sete dezenas mais sorteadas da Dupla Sena
 
-        preencheCartelas(50, cartelaDuplaSena, mais7Array, dados.getMais7DuplaSena());
+        preencheCartelas(50, cartelaDuplaSena, mais7Array, dados.getMais7DuplaSena()); //Método que preenche os arrays acima.
 
+        //shuffle(); ordena aleatóriamente os itens de ArrayList fazendo o "sorteio" das dezenas.
         Collections.shuffle(cartelaDuplaSena);
         Collections.shuffle(mais7Array);
 
         if (aswitch.isChecked()){
-
+            //Muda para um background especial as duas primeiras TextViews.
             txt1.setBackgroundResource(R.drawable.boladuplasena);
             txt2.setBackgroundResource(R.drawable.boladuplasena);
+
+            //Pega os dois primeiros itens do objeto mais7Array
             txt1.setText(mais7Array.get(0));
             txt2.setText(mais7Array.get(1));
-            //////////////////////aqui estou //////////
+
+            //Necessário usar o método remover(); da classe RemoveAdd para remover do objeto
+            //cartelaDuplaSena os itens que ela partilha com o objeto mais7Array para não
+            //haver duplicidade de dezenas a serem exibidas ao usuário.
             RemoveAdd removeAdd = new RemoveAdd(context);
             removeAdd.remover(cartelaDuplaSena, "04", "14", "19", "33", "39",
                     "45", "47");
@@ -51,12 +57,19 @@ public class Sorteios {
                 txtViewList2[i].setText(cartelaDuplaSena.get(i));
             }
 
+            //Depois que as dezenas foram devidamente "sorteadas e exibidas" ao usuário, deve-se
+            //adiciona-las novamente para tudo estar preparado para um novo ciclo.
             removeAdd.adicionar(cartelaDuplaSena,"04", "14", "19", "33", "39",
                     "45", "47");
 
         }else {
+
+            //Retorna e/ou assegura que o background das duas primeiras dezenas esteja na forma padrão.
             txt1.setBackgroundResource(R.drawable.bola_a);
             txt2.setBackgroundResource(R.drawable.bola_b);
+
+            //Muda dinâmicamente o texto das seis TextViews pegando os primeiros 6 itens
+            //do objeto cartelaDuplaSena.
             for (int i = 0; i < 6; i++){
                 txtViewList[i].setText(cartelaDuplaSena.get(i));
             }
