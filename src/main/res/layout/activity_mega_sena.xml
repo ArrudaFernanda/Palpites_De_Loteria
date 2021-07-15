@@ -13,6 +13,33 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="60dp"
+                  android:id="@+id/txtMegasena"
+                  android:text="@string/strMegaSena"
+                  android:fontFamily="sans-serif-black"
+                  android:textStyle="italic"
+                  android:textSize="40sp"
+                  android:textColor="@color/txtColorPadrao"
+                  android:textAlignment="center"
+                  android:gravity="center"
+                  android:background="@color/colorMegaSena"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginTop="4dp"
+                  android:layout_marginRight="56dp"
+                  android:layout_marginEnd="56dp"
+        />
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:id="@+id/trevomegasena"
+                   android:background="@drawable/trevomegasena"
+                   android:layout_toLeftOf="@+id/txtMegasena"
+                   android:layout_toStartOf="@+id/txtMegasena"
+                   android:layout_marginTop="4dp"
+        />
+
         <androidx.appcompat.widget.SwitchCompat
                 android:text="Estatística  "
                 android:textSize="@dimen/txtSwitch"
@@ -30,33 +57,6 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="10dp"/>
-
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="60dp"
-                  android:id="@+id/txtMegasena"
-                  android:text="@string/strMegaSena"
-                  android:fontFamily="sans-serif-black"
-                  android:textStyle="italic"
-                  android:textSize="40sp"
-                  android:textColor="@color/txtColorPadrao"
-                  android:textAlignment="center"
-                  android:gravity="center"
-                  android:background="@color/colorMegaSena"
-                  android:layout_alignParentRight="true"
-                  android:layout_alignParentEnd="true"
-                  android:layout_marginTop="4dp"
-                  android:layout_marginRight="56dp"
-                  android:layout_marginEnd="56dp"
-                  />
-
-        <ImageView android:layout_width="60dp"
-                   android:layout_height="60dp"
-                   android:id="@+id/trevomegasena"
-                   android:background="@drawable/trevomegasena"
-                   android:layout_toLeftOf="@+id/txtMegasena"
-                   android:layout_toStartOf="@+id/txtMegasena"
-                   android:layout_marginTop="4dp"
-                   />
 
         <TextView
                 android:text=""
@@ -87,7 +87,7 @@
                 android:layout_below="@+id/txtMegasena"
                 android:layout_toEndOf="@+id/view1_m"
                 android:layout_toRightOf="@+id/view1_m"
-                />
+        />
 
         <TextView
                 android:text=""
@@ -173,8 +173,6 @@
                 android:layout_toRightOf="@+id/btnMegGerar"
                 android:layout_toEndOf="@id/btnMegGerar"
                 android:layout_marginStart="10dp"/>
-
-
 
     </RelativeLayout>
 
