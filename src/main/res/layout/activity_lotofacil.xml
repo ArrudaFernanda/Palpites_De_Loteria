@@ -13,30 +13,39 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent">
 
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="60dp"
-                  android:id="@+id/txtLotofacil"
-                  android:text="@string/strLotofacil"
-                  android:textStyle="italic"
-                  android:textSize="40sp"
-                  android:textColor="@color/txtColorPadrao"
-                  android:textAlignment="center"
-                  android:gravity="center"
-                  android:background="@color/colorLotofacil"
-                  android:fontFamily="sans-serif-black"
-                  android:layout_alignParentRight="true"
-                  android:layout_alignParentEnd="true"
-                  android:layout_marginRight="70dp"
-                  android:layout_marginEnd="70dp"
-                  android:layout_marginTop="4dp"/>
 
-        <ImageView android:layout_width="60dp"
-                   android:layout_height="60dp"
-                   android:id="@+id/trevolotof"
-                   android:background="@drawable/trevolotofacil"
-                   android:layout_marginTop="4dp"
-                   android:layout_toStartOf="@+id/txtLotofacil"
-                   android:layout_toLeftOf="@+id/txtLotofacil"/>
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl2"
+                android:layout_centerHorizontal="true">
+
+            <ImageView android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:id="@+id/trevolotof"
+                       android:background="@drawable/trevolotofacil"
+                       android:layout_marginTop="4dp"
+                       android:layout_toStartOf="@+id/txtLotofacil"
+                       android:layout_toLeftOf="@+id/txtLotofacil"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="60dp"
+                      android:id="@+id/txtLotofacil"
+                      android:text="@string/strLotofacil"
+                      android:textStyle="italic"
+                      android:textSize="40sp"
+                      android:textColor="@color/txtColorPadrao"
+                      android:textAlignment="center"
+                      android:gravity="center"
+                      android:background="@color/colorLotofacil"
+                      android:fontFamily="sans-serif-black"
+                      android:layout_alignParentRight="true"
+                      android:layout_alignParentEnd="true"
+                      android:layout_marginRight="70dp"
+                      android:layout_marginEnd="70dp"
+                      android:layout_marginTop="4dp"/>
+
+        </RelativeLayout>
 
         <androidx.appcompat.widget.SwitchCompat
                 android:layout_width="wrap_content"
@@ -49,221 +58,220 @@
                 app:showText="true"
                 android:textOn="@string/strON"
                 android:textOff="@string/strOFF"
-                android:layout_below="@+id/txtLotofacil"
+                android:layout_below="@+id/rl2"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="34dp"
                 android:layout_marginEnd="10dp"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_a"
-                android:id="@+id/view1_l"
-                android:layout_below="@+id/txtLotofacil"
-                android:layout_marginTop="92dp"/>
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl3"
+                        android:layout_below="@+id/rl2"
+                        android:layout_marginTop="110dp"
+                        android:layout_centerHorizontal="true">
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_b"
-                android:id="@+id/view2_l"
-                android:layout_below="@+id/txtLotofacil"
-                android:layout_marginTop="92dp"
-                android:layout_toRightOf="@+id/view1_l"
-                android:layout_toEndOf="@+id/view1_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_a"
+                    android:id="@+id/view1_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_c"
-                android:id="@+id/view3_l"
-                android:layout_below="@+id/txtLotofacil"
-                android:layout_marginTop="92dp"
-                android:layout_toRightOf="@+id/view2_l"
-                android:layout_toEndOf="@+id/view2_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_b"
+                    android:id="@+id/view2_l"
+                    android:layout_toRightOf="@+id/view1_l"
+                    android:layout_toEndOf="@+id/view1_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_d"
-                android:id="@+id/view4_l"
-                android:layout_below="@+id/txtLotofacil"
-                android:layout_marginTop="92dp"
-                android:layout_toRightOf="@+id/view3_l"
-                android:layout_toEndOf="@+id/view3_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_c"
+                    android:id="@+id/view3_l"
+                    android:layout_toRightOf="@+id/view2_l"
+                    android:layout_toEndOf="@+id/view2_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_e"
-                android:id="@+id/view5_l"
-                android:layout_below="@+id/txtLotofacil"
-                android:layout_marginTop="92dp"
-                android:layout_toRightOf="@+id/view4_l"
-                android:layout_toEndOf="@+id/view4_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_d"
+                    android:id="@+id/view4_l"
+                    android:layout_toRightOf="@+id/view3_l"
+                    android:layout_toEndOf="@+id/view3_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_f"
-                android:id="@+id/view6_l"
-                android:layout_below="@+id/view1_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_e"
+                    android:id="@+id/view5_l"
+                    android:layout_toRightOf="@+id/view4_l"
+                    android:layout_toEndOf="@+id/view4_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_g"
-                android:id="@+id/view7_l"
-                android:layout_below="@+id/view2_l"
-                android:layout_toRightOf="@+id/view6_l"
-                android:layout_toEndOf="@+id/view6_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_f"
+                    android:id="@+id/view6_l"
+                    android:layout_below="@+id/view1_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_h"
-                android:id="@+id/view8_l"
-                android:layout_below="@+id/view3_l"
-                android:layout_toRightOf="@+id/view7_l"
-                android:layout_toEndOf="@+id/view7_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_g"
+                    android:id="@+id/view7_l"
+                    android:layout_below="@+id/view2_l"
+                    android:layout_toRightOf="@+id/view6_l"
+                    android:layout_toEndOf="@+id/view6_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_i"
-                android:id="@+id/view9_l"
-                android:layout_below="@+id/view4_l"
-                android:layout_toRightOf="@+id/view8_l"
-                android:layout_toEndOf="@+id/view8_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_h"
+                    android:id="@+id/view8_l"
+                    android:layout_below="@+id/view3_l"
+                    android:layout_toRightOf="@+id/view7_l"
+                    android:layout_toEndOf="@+id/view7_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_j"
-                android:id="@+id/view10_l"
-                android:layout_below="@+id/view5_l"
-                android:layout_toRightOf="@+id/view9_l"
-                android:layout_toEndOf="@+id/view9_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_i"
+                    android:id="@+id/view9_l"
+                    android:layout_below="@+id/view4_l"
+                    android:layout_toRightOf="@+id/view8_l"
+                    android:layout_toEndOf="@+id/view8_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_a"
-                android:id="@+id/view11_l"
-                android:layout_below="@+id/view6_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_j"
+                    android:id="@+id/view10_l"
+                    android:layout_below="@+id/view5_l"
+                    android:layout_toRightOf="@+id/view9_l"
+                    android:layout_toEndOf="@+id/view9_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_b"
-                android:id="@+id/view12_l"
-                android:layout_below="@+id/view7_l"
-                android:layout_toRightOf="@+id/view11_l"
-                android:layout_toEndOf="@+id/view11_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_a"
+                    android:id="@+id/view11_l"
+                    android:layout_below="@+id/view6_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_c"
-                android:id="@+id/view13_l"
-                android:layout_below="@+id/view8_l"
-                android:layout_toRightOf="@+id/view12_l"
-                android:layout_toEndOf="@+id/view12_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_b"
+                    android:id="@+id/view12_l"
+                    android:layout_below="@+id/view7_l"
+                    android:layout_toRightOf="@+id/view11_l"
+                    android:layout_toEndOf="@+id/view11_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_d"
-                android:id="@+id/view14_l"
-                android:layout_below="@+id/view9_l"
-                android:layout_toRightOf="@+id/view13_l"
-                android:layout_toEndOf="@+id/view13_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_c"
+                    android:id="@+id/view13_l"
+                    android:layout_below="@+id/view8_l"
+                    android:layout_toRightOf="@+id/view12_l"
+                    android:layout_toEndOf="@+id/view12_l"/>
 
-        <TextView
-                android:text=""
-                android:textColor="#000000"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_e"
-                android:id="@+id/view15_l"
-                android:layout_below="@+id/view10_l"
-                android:layout_toRightOf="@+id/view14_l"
-                android:layout_toEndOf="@+id/view14_l"/>
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_d"
+                    android:id="@+id/view14_l"
+                    android:layout_below="@+id/view9_l"
+                    android:layout_toRightOf="@+id/view13_l"
+                    android:layout_toEndOf="@+id/view13_l"/>
+
+            <TextView
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_e"
+                    android:id="@+id/view15_l"
+                    android:layout_below="@+id/view10_l"
+                    android:layout_toRightOf="@+id/view14_l"
+                    android:layout_toEndOf="@+id/view14_l"/>
+
+        </RelativeLayout>
 
         <Button
                 android:layout_width="@dimen/btnGerar_w"
@@ -273,10 +281,9 @@
                 android:background="@drawable/btncorner"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:id="@+id/btnLotofGerar"
-                android:layout_below="@+id/view12_l"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="134dp"
-                android:layout_marginStart="134dp"/>
+                android:layout_below="@+id/rl3"
+                android:layout_marginTop="32dp"
+                android:layout_centerHorizontal="true"/>
 
         <Button
                 android:text="@string/strBtnCopy"
@@ -287,9 +294,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnCopLotof"
-                android:layout_below="@+id/view15_l"
+                android:layout_below="@+id/rl3"
                 android:layout_toRightOf="@+id/btnLotofGerar"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginLeft="10dp"
                 android:layout_toEndOf="@+id/btnLotofGerar"
                 android:layout_marginStart="10dp"/>
