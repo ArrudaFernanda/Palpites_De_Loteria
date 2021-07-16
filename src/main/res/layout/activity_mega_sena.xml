@@ -13,32 +13,32 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="60dp"
-                  android:id="@+id/txtMegasena"
-                  android:text="@string/strMegaSena"
-                  android:fontFamily="sans-serif-black"
-                  android:textStyle="italic"
-                  android:textSize="40sp"
-                  android:textColor="@color/txtColorPadrao"
-                  android:textAlignment="center"
-                  android:gravity="center"
-                  android:background="@color/colorMegaSena"
-                  android:layout_alignParentRight="true"
-                  android:layout_alignParentEnd="true"
-                  android:layout_marginTop="4dp"
-                  android:layout_marginRight="56dp"
-                  android:layout_marginEnd="56dp"
-        />
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl2"
+                        android:layout_marginTop="4dp"
+                        android:layout_centerHorizontal="true">
 
-        <ImageView android:layout_width="60dp"
-                   android:layout_height="60dp"
-                   android:id="@+id/trevomegasena"
-                   android:background="@drawable/trevomegasena"
-                   android:layout_toLeftOf="@+id/txtMegasena"
-                   android:layout_toStartOf="@+id/txtMegasena"
-                   android:layout_marginTop="4dp"
-        />
+            <ImageView android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:id="@+id/trevomegasena"
+                       android:background="@drawable/trevomegasena"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="60dp"
+                      android:id="@+id/txtMegasena"
+                      android:text="@string/strMegaSena"
+                      android:fontFamily="sans-serif-black"
+                      android:textStyle="italic"
+                      android:textSize="40sp"
+                      android:textColor="@color/txtColorPadrao"
+                      android:textAlignment="center"
+                      android:gravity="center"
+                      android:background="@color/colorMegaSena"
+                      android:layout_toEndOf="@+id/trevomegasena"
+                      android:layout_toRightOf="@+id/trevomegasena"/>
+
+        </RelativeLayout>
 
         <androidx.appcompat.widget.SwitchCompat
                 android:text="Estatística  "
@@ -51,100 +51,98 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/switchMegaSena"
-                android:layout_below="@+id/txtMegasena"
+                android:layout_below="@+id/rl2"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="10dp"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_a"
-                android:id="@+id/view1_m"
-                android:layout_marginLeft="88dp"
-                android:layout_marginStart="88dp"
-                android:layout_marginTop="82dp"
-                android:layout_below="@+id/txtMegasena"/>
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/rl2"
+                        android:layout_marginTop="100dp">
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_b"
-                android:id="@+id/view2_m"
-                android:layout_marginTop="82dp"
-                android:layout_below="@+id/txtMegasena"
-                android:layout_toEndOf="@+id/view1_m"
-                android:layout_toRightOf="@+id/view1_m"
-        />
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_a"
+                    android:id="@+id/view1_m"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_j"
-                android:id="@+id/view3_m"
-                android:layout_marginTop="82dp"
-                android:layout_below="@+id/txtMegasena"
-                android:layout_toEndOf="@+id/view2_m"
-                android:layout_toRightOf="@+id/view2_m"/>
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_b"
+                    android:id="@+id/view2_m"
+                    android:layout_toEndOf="@+id/view1_m"
+                    android:layout_toRightOf="@+id/view1_m"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_i"
-                android:id="@+id/view4_m"
-                android:layout_marginLeft="88dp"
-                android:layout_marginStart="88dp"
-                android:layout_below="@id/view1_m"/>
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_j"
+                    android:id="@+id/view3_m"
+                    android:layout_toEndOf="@+id/view2_m"
+                    android:layout_toRightOf="@+id/view2_m"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_h"
-                android:id="@+id/view5_m"
-                android:layout_below="@+id/view2_m"
-                android:layout_toEndOf="@+id/view4_m"
-                android:layout_toRightOf="@+id/view4_m"/>
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_i"
+                    android:id="@+id/view4_m"
+                    android:layout_below="@id/view1_m"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_d"
-                android:id="@+id/view6_m"
-                android:layout_below="@+id/view3_m"
-                android:layout_toEndOf="@+id/view5_m"
-                android:layout_toRightOf="@+id/view5_m"/>
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_h"
+                    android:id="@+id/view5_m"
+                    android:layout_below="@+id/view2_m"
+                    android:layout_toEndOf="@+id/view4_m"
+                    android:layout_toRightOf="@+id/view4_m"/>
+
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_d"
+                    android:id="@+id/view6_m"
+                    android:layout_below="@+id/view3_m"
+                    android:layout_toEndOf="@+id/view5_m"
+                    android:layout_toRightOf="@+id/view5_m"/>
+
+        </RelativeLayout>
 
         <Button android:layout_width="@dimen/btnGerar_w"
                 android:layout_height="wrap_content"
@@ -153,10 +151,9 @@
                 android:textColor="@color/txtColorPadrao"
                 android:background="@drawable/btncorner"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_below="@+id/view5_m"
+                android:layout_below="@+id/rl3"
                 android:layout_marginTop="44dp"
-                android:layout_marginLeft="146dp"
-                android:layout_marginStart="146dp"/>
+                android:layout_centerHorizontal="true"/>
 
         <Button
                 android:text="@string/strBtnCopy"
@@ -167,7 +164,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnCopMega"
-                android:layout_below="@+id/view6_m"
+                android:layout_below="@+id/rl3"
                 android:layout_marginTop="44dp"
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/btnMegGerar"

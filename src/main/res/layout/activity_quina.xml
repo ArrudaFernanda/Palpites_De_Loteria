@@ -13,31 +13,32 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent">
 
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl2"
+                        android:layout_marginTop="4dp"
+                        android:layout_centerHorizontal="true">
 
-        <TextView android:layout_width="140dp"
-                  android:layout_height="60dp"
-                  android:id="@+id/txtQuina"
-                  android:text="@string/strQuina"
-                  android:textStyle="italic"
-                  android:textSize="40sp"
-                  android:textColor="@color/txtColorPadrao"
-                  android:textAlignment="center"
-                  android:gravity="center"
-                  android:background="@color/colorQuina"
-                  android:fontFamily="sans-serif-black"
-                  android:layout_alignParentRight="true"
-                  android:layout_alignParentEnd="true"
-                  android:layout_marginTop="4dp"
-                  android:layout_marginRight="100dp"
-                  android:layout_marginEnd="100dp"/>
+            <ImageView android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:id="@+id/trevoquina"
+                       android:background="@drawable/trevoquina9"/>
 
-        <ImageView android:layout_width="60dp"
-                   android:layout_height="60dp"
-                   android:id="@+id/trevoquina"
-                   android:background="@drawable/trevoquina9"
-                   android:layout_toStartOf="@+id/txtQuina"
-                   android:layout_toLeftOf="@+id/txtQuina"
-                   android:layout_marginTop="4dp"/>
+            <TextView android:layout_width="140dp"
+                      android:layout_height="60dp"
+                      android:id="@+id/txtQuina"
+                      android:text="@string/strQuina"
+                      android:textStyle="italic"
+                      android:textSize="40sp"
+                      android:textColor="@color/txtColorPadrao"
+                      android:textAlignment="center"
+                      android:gravity="center"
+                      android:background="@color/colorQuina"
+                      android:fontFamily="sans-serif-black"
+                      android:layout_toEndOf="@+id/trevoquina"
+                      android:layout_toRightOf="@+id/trevoquina"/>
+
+        </RelativeLayout>
 
         <androidx.appcompat.widget.SwitchCompat
                 android:layout_width="wrap_content"
@@ -50,88 +51,90 @@
                 app:showText="true"
                 android:textOn="@string/strON"
                 android:textOff="@string/strOFF"
-                android:layout_below="@+id/txtQuina"
+                android:layout_below="@+id/rl2"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginEnd="10dp"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_c"
-                android:id="@+id/view1_q"
-                android:layout_below="@+id/txtQuina"
-                android:layout_marginTop="110dp"
-                android:layout_marginLeft="88dp"
-                android:layout_marginStart="88dp"
-               />
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl3"
+                        android:layout_below="@+id/rl2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="100dp">
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_e"
-                android:id="@+id/view2_q"
-                android:layout_below="@+id/txtQuina"
-                android:layout_toRightOf="@+id/view1_q"
-                android:layout_toEndOf="@+id/view1_q"
-                android:layout_marginTop="110dp"
-               />
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_c"
+                    android:id="@+id/view1_q"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_i"
-                android:id="@+id/view3_q"
-                android:layout_below="@+id/txtQuina"
-                android:layout_toRightOf="@+id/view2_q"
-                android:layout_toEndOf="@+id/view2_q"
-                android:layout_marginTop="110dp"
-                />
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_e"
+                    android:id="@+id/view2_q"
+                    android:layout_toRightOf="@+id/view1_q"
+                    android:layout_toEndOf="@+id/view1_q"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_j"
-                android:id="@+id/view4_q"
-                android:layout_marginLeft="132dp"
-                android:layout_marginStart="132dp"
-                android:layout_below="@+id/view1_q"/>
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_i"
+                    android:id="@+id/view3_q"
+                    android:layout_toRightOf="@+id/view2_q"
+                    android:layout_toEndOf="@+id/view2_q"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_b"
-                android:id="@+id/view5_q"
-                android:layout_below="@+id/view2_q"
-                android:layout_toRightOf="@+id/view4_q"
-                android:layout_toEndOf="@+id/view4_q"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/rl3">
+
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_j"
+                    android:id="@+id/view4_q"/>
+
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_b"
+                    android:id="@+id/view5_q"
+                    android:layout_toRightOf="@+id/view4_q"
+                    android:layout_toEndOf="@+id/view4_q"/>
+
+        </RelativeLayout>
 
         <Button android:layout_width="@dimen/btnGerar_w"
                 android:layout_height="wrap_content"
@@ -140,10 +143,9 @@
                 android:textColor="@color/txtColorPadrao"
                 android:background="@drawable/btncorner"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_below="@+id/view4_q"
+                android:layout_below="@+id/rl4"
                 android:layout_marginTop="40dp"
-                android:layout_marginLeft="140dp"
-                android:layout_marginStart="140dp"/>
+                android:layout_centerHorizontal="true"/>
 
         <Button
                 android:text="@string/strBtnCopy"
@@ -154,12 +156,13 @@
                 android:id="@+id/btnCopQuina"
                 android:background="@drawable/btncorner"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_below="@+id/view5_q"
+                android:layout_below="@+id/rl4"
                 android:layout_toRightOf="@+id/btnQuinGerar"
                 android:layout_toEndOf="@+id/btnQuinGerar"
                 android:layout_marginTop="40dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginStart="10dp"/>
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

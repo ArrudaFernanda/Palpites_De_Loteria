@@ -17,15 +17,13 @@
         <RelativeLayout android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
                         android:id="@+id/rl2">
 
             <ImageView android:layout_width="60dp"
                        android:layout_height="60dp"
                        android:id="@+id/trevolotomania"
-                       android:background="@drawable/trevolotomania"
-                       android:layout_marginTop="4dp"
-                       android:layout_toStartOf="@+id/txtLotomania"
-                       android:layout_toLeftOf="@+id/txtLotomania"/>
+                       android:background="@drawable/trevolotomania"/>
 
             <TextView android:layout_width="wrap_content"
                       android:layout_height="60dp"
@@ -38,11 +36,8 @@
                       android:textAlignment="center"
                       android:gravity="center"
                       android:background="@color/colorLotomania"
-                      android:layout_alignParentRight="true"
-                      android:layout_alignParentEnd="true"
-                      android:layout_marginTop="4dp"
-                      android:layout_marginRight="56dp"
-                      android:layout_marginEnd="56dp"/>
+                      android:layout_toEndOf="@+id/trevolotomania"
+                      android:layout_toRightOf="@+id/trevolotomania"/>
 
         </RelativeLayout>
 
@@ -50,7 +45,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/rl3"
                         android:layout_below="@+id/rl2"
-                        android:layout_marginTop="70dp"
+                        android:layout_marginTop="50dp"
                         android:layout_centerHorizontal="true">
 
             <TextView

@@ -13,30 +13,32 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="60dp"
-                  android:id="@+id/txtDuplasena"
-                  android:text="@string/strDuplaSena"
-                  android:textStyle="italic"
-                  android:textSize="40sp"
-                  android:textColor="@color/txtColorPadrao"
-                  android:textAlignment="center"
-                  android:gravity="center"
-                  android:background="@color/colorDuplaSena"
-                  android:fontFamily="sans-serif-black"
-                  android:layout_alignParentRight="true"
-                  android:layout_alignParentEnd="true"
-                  android:layout_marginTop="4dp"
-                  android:layout_marginRight="56dp"
-                  android:layout_marginEnd="56dp"/>
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl2"
+                        android:layout_marginTop="4dp"
+                        android:layout_centerHorizontal="true">
 
-        <ImageView android:layout_width="60dp"
-                   android:layout_height="60dp"
-                   android:id="@+id/trevodupsena"
-                   android:background="@drawable/trevoduplasena"
-                   android:layout_marginTop="4dp"
-                   android:layout_toLeftOf="@+id/txtDuplasena"
-                   android:layout_toStartOf="@+id/txtDuplasena"/>
+            <ImageView android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:id="@+id/trevodupsena"
+                       android:background="@drawable/trevoduplasena"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="60dp"
+                      android:id="@+id/txtDuplasena"
+                      android:text="@string/strDuplaSena"
+                      android:textStyle="italic"
+                      android:textSize="40sp"
+                      android:textColor="@color/txtColorPadrao"
+                      android:textAlignment="center"
+                      android:gravity="center"
+                      android:background="@color/colorDuplaSena"
+                      android:fontFamily="sans-serif-black"
+                      android:layout_toEndOf="@id/trevodupsena"
+                      android:layout_toRightOf="@id/trevodupsena"/>
+
+        </RelativeLayout>
 
         <androidx.appcompat.widget.SwitchCompat
                 android:text="Estatística  "
@@ -49,99 +51,98 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/switchDuplasena"
-                android:layout_below="@+id/txtDuplasena"
+                android:layout_below="@+id/rl2"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginTop="46dp"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_a"
-                android:id="@+id/view1_d"
-                android:layout_marginLeft="88dp"
-                android:layout_marginStart="88dp"
-                android:layout_below="@+id/txtDuplasena"
-                android:layout_marginTop="110dp"/>
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rl3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/rl2"
+                        android:layout_marginTop="100dp">
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_b"
-                android:id="@+id/view2_d"
-                android:layout_toRightOf="@+id/view1_d"
-                android:layout_toEndOf="@+id/view1_d"
-                android:layout_below="@+id/txtDuplasena"
-                android:layout_marginTop="110dp"/>
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_a"
+                    android:id="@+id/view1_d"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_c"
-                android:id="@+id/view3_d"
-                android:layout_toRightOf="@+id/view2_d"
-                android:layout_toEndOf="@+id/view2_d"
-                android:layout_below="@+id/txtDuplasena"
-                android:layout_marginTop="110dp"/>
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_b"
+                    android:id="@+id/view2_d"
+                    android:layout_toRightOf="@+id/view1_d"
+                    android:layout_toEndOf="@+id/view1_d"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_d"
-                android:id="@+id/view4_d"
-                android:layout_below="@+id/view1_d"
-                android:layout_marginLeft="88dp"
-                android:layout_marginStart="88dp"/>
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_c"
+                    android:id="@+id/view3_d"
+                    android:layout_toRightOf="@+id/view2_d"
+                    android:layout_toEndOf="@+id/view2_d"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_e"
-                android:id="@+id/view5_d"
-                android:layout_toRightOf="@+id/view4_d"
-                android:layout_toEndOf="@+id/view4_d"
-                android:layout_below="@+id/view2_d"/>
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_d"
+                    android:id="@+id/view4_d"
+                    android:layout_below="@+id/view1_d"/>
 
-        <TextView
-                android:text=""
-                android:textColor="@color/txtBolas"
-                android:fontFamily="sans-serif-black"
-                android:textSize="@dimen/txtSizeBolas"
-                android:gravity="center"
-                android:layout_width="@dimen/imgBola_hw"
-                android:layout_height="@dimen/imgBola_hw"
-                android:background="@drawable/bola_f"
-                android:id="@+id/view6_d"
-                android:layout_toRightOf="@+id/view5_d"
-                android:layout_toEndOf="@+id/view5_d"
-                android:layout_below="@+id/view3_d"/>
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_e"
+                    android:id="@+id/view5_d"
+                    android:layout_toRightOf="@+id/view4_d"
+                    android:layout_toEndOf="@+id/view4_d"
+                    android:layout_below="@+id/view2_d"/>
+
+            <TextView
+                    android:text=""
+                    android:textColor="@color/txtBolas"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="@dimen/txtSizeBolas"
+                    android:gravity="center"
+                    android:layout_width="@dimen/imgBola_hw"
+                    android:layout_height="@dimen/imgBola_hw"
+                    android:background="@drawable/bola_f"
+                    android:id="@+id/view6_d"
+                    android:layout_toRightOf="@+id/view5_d"
+                    android:layout_toEndOf="@+id/view5_d"
+                    android:layout_below="@+id/view3_d"/>
+
+        </RelativeLayout>
 
         <Button android:layout_width="@dimen/btnGerar_w"
                 android:layout_height="wrap_content"
@@ -150,10 +151,9 @@
                 android:textColor="@color/txtColorPadrao"
                 android:background="@drawable/btncorner"
                 style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
-                android:layout_marginLeft="138dp"
-                android:layout_below="@id/view5_d"
-                android:layout_marginStart="138dp"/>
+                android:layout_below="@id/rl3"/>
 
         <Button
                 android:text="@string/strBtnCopy"
@@ -164,7 +164,7 @@
                 android:background="@drawable/btncorner"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:id="@+id/btnCopDupSena"
-                android:layout_below="@+id/view6_d"
+                android:layout_below="@+id/rl3"
                 android:layout_toRightOf="@+id/btnDupGerar"
                 android:layout_toEndOf="@+id/btnDupGerar"
                 android:layout_marginTop="40dp"
