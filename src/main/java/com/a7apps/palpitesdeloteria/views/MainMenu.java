@@ -6,6 +6,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.a7apps.palpitesdeloteria.R;
+import com.a7apps.palpitesdeloteria.network.PushNotification;
 
 public class MainMenu extends AppCompatActivity {
     Button btnLotofacil, btnQuina, btnDupSena, btnLotomania, btnMegSena;
@@ -13,6 +14,9 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainmenu);
+
+        Intent intentBackgroundService = new Intent(this, PushNotification.class);
+        startService(intentBackgroundService);
 
         btnLotofacil = findViewById(R.id.btnLotofacil);
         btnQuina = findViewById(R.id.btnQuina);
