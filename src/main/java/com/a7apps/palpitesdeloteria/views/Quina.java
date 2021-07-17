@@ -12,15 +12,22 @@ import android.os.Bundle;
 import androidx.appcompat.widget.SwitchCompat;
 import com.a7apps.palpitesdeloteria.R;
 import com.a7apps.palpitesdeloteria.control.Sorteios;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class Quina extends AppCompatActivity {
     private TextView view1, view2, view3, view4, view5;
     private Button btnQuinaGerar, btnCopQuina;
     private SwitchCompat aSwitch;
+    private AdView adView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quina);
+
+        adView = findViewById(R.id.adViewQuina);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         view1 = findViewById(R.id.view1_q);
         view2 = findViewById(R.id.view2_q);

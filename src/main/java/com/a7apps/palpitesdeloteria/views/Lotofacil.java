@@ -12,6 +12,8 @@ import android.os.Bundle;
 import androidx.appcompat.widget.SwitchCompat;
 import com.a7apps.palpitesdeloteria.R;
 import com.a7apps.palpitesdeloteria.control.Sorteios;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 
@@ -20,10 +22,15 @@ public class Lotofacil extends AppCompatActivity {
             view12, view13, view14, view15;
     private Button btnGerar, btnCopLotof;
     private SwitchCompat switchComp;
+    private AdView adView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lotofacil);
+
+        adView = findViewById(R.id.adViewLotofacil);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         view1 = findViewById(R.id.view1_l);
         view2 = findViewById(R.id.view2_l);

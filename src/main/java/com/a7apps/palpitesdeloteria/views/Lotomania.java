@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.a7apps.palpitesdeloteria.R;
 import com.a7apps.palpitesdeloteria.control.Sorteios;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 
@@ -20,10 +22,15 @@ public class Lotomania extends AppCompatActivity {
             view31, view32, view33, view34, view35, view36, view37, view38, view39, view40, view41, view42, view43, view44,
             view45, view46, view47, view48, view49, view50;
     private Button btnGerar, btnCopLotom;
+    private AdView adView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lotomania);
+
+        adView = findViewById(R.id.adViewLotomania);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         view1 = findViewById(R.id.view1_lm);
         view2 = findViewById(R.id.view2_lm);

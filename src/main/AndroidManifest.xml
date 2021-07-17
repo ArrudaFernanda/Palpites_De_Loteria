@@ -12,21 +12,29 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID"
+                   android:value="ca-app-pub-2950272666759816~3034064436"/>
+
         <activity android:name=".views.Lotomania"
                   android:theme="@style/LotomaniaTheme"
-                  android:screenOrientation="portrait">
+                  android:screenOrientation="portrait"
+                  android:hardwareAccelerated="true">
         </activity>
         <activity android:name=".views.MegaSena"
                   android:theme="@style/MegaSenaTheme"
-                  android:screenOrientation="portrait">
+                  android:screenOrientation="portrait"
+                  android:hardwareAccelerated="true">
         </activity>
         <activity android:name=".views.Quina"
                   android:theme="@style/QuinaTheme"
-                  android:screenOrientation="portrait">
+                  android:screenOrientation="portrait"
+                  android:hardwareAccelerated="true">
         </activity>
         <activity android:name=".views.Lotofacil"
                   android:theme="@style/LotofacilTheme"
-                  android:screenOrientation="portrait">
+                  android:screenOrientation="portrait"
+                  android:hardwareAccelerated="true">
         </activity>
         <activity android:name=".intro.IntroActivity"
                   android:theme="@style/Theme.AppCompat.NoActionBar"
@@ -40,10 +48,12 @@
         <activity
                 android:name=".views.DuplaSena"
                 android:theme="@style/DuplaSenaTheme"
-                android:screenOrientation="portrait">
+                android:screenOrientation="portrait"
+                android:hardwareAccelerated="true">
         </activity>
         <activity android:name=".views.MainMenu"
-                  android:screenOrientation="portrait">
+                  android:screenOrientation="portrait"
+                  android:hardwareAccelerated="true">
 
         </activity>
 
