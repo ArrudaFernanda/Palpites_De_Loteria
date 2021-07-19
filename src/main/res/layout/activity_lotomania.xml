@@ -41,11 +41,23 @@
 
         </RelativeLayout>
 
+        <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adViewLotomania"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+                android:layout_below="@+id/rl2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp">
+        </com.google.android.gms.ads.AdView>
+
         <RelativeLayout android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/rl3"
                         android:layout_below="@+id/rl2"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginTop="68dp"
                         android:layout_centerHorizontal="true">
 
             <TextView
@@ -756,7 +768,7 @@
                 android:id="@+id/btnLMGerar"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/rl5"
-                android:layout_marginTop="26dp"/>
+                android:layout_marginTop="14dp"/>
 
         <Button
                 android:text="@string/strBtnCopy"
@@ -770,21 +782,10 @@
                 android:layout_below="@+id/rl5"
                 android:layout_toRightOf="@+id/btnLMGerar"
                 android:layout_toEndOf="@+id/btnLMGerar"
-                android:layout_marginTop="26dp"
+                android:layout_marginTop="14dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginStart="10dp"/>
 
     </RelativeLayout>
 
-    <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/adViewLotomania"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
-    </com.google.android.gms.ads.AdView>
 </androidx.constraintlayout.widget.ConstraintLayout>
